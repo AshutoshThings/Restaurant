@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #0c0907;
+    background-blend-mode: darken;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+}
+button{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 10px;
+    margin:5px 10px;
+    background-color: transparent;
+    color:white;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    border:1px solid white; 
+    background-color: rgb(228, 194, 132);
+    color: #000000;
+}
+#homeButton::before{
+    background-color: rgb(228, 194, 132);
+    color: #000000;
+}
+#content .hero1{
+    background-image: url("./images/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9); 
+    background-blend-mode: darken;
+    color : white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content .hero1 .leftContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+#content .hero1 .leftContent .heading{
+    font-size: 72px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    text-wrap: wrap;
+    width: 60%;
+}
+#content .hero1 .leftContent .descp{
+    margin-left: 10%;
+    margin-bottom: 5%;
+    text-wrap: none;
+    width: 80%;
+    font-size: 25px;
+}
+#content .hero1 .leftContent .buttonToOrder button{
+    margin-left: 10%;
+    margin-bottom: 5%;
+    text-wrap: none;
+    width: 80%;
+    font-size: 25px;
+    background:rgb(165,116,0);
+    color: black;
+}
+#content .hero1 .leftContent .buttonToOrder button:hover{
+    background-color:rgba(223, 156, 0, 1) ;
+    color : rgb(255, 255, 255);
+}
+
+#content .hero1 .rightContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.pizzaRotating{
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/pizza2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: rotatePizza 15s linear infinite;
+}
+@keyframes rotatePizza {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.hero2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 5% 0;
+}
+.hero2 .features{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:20px;
+    padding:10px;
+    border:1px solid black;
+    transition: 0.8s;
+}
+.hero2 .features .imageIcon{
+    width: 100%;
+    min-height: 150px;
+    background-image: url("images/fresh-100.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(0.7);
+}
+.hero2 .features:hover{
+    background-color: yellow;
+
+}
