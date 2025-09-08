@@ -26,10 +26,6 @@ button:hover{
     background-color: rgb(228, 194, 132);
     color: #000000;
 }
-#homeButton::before{
-    background-color: rgb(228, 194, 132);
-    color: #000000;
-}
 #content .hero1{
     background-image: url("./images/bg1.jpg");
     background-position: center;
@@ -131,4 +127,9 @@ button:hover{
 .hero2 .features:hover{
     background-color: yellow;
 
+}
+.selected{
+    border:1px solid white; 
+    background-color: rgb(228, 194, 132);
+    color: #000000;
 }

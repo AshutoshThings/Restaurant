@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menuHeading{
+    font-size: 62px;
+    text-align: center;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-evenly;
+    margin:0 5%;
+}
+.left{
+    flex-direction: row;
+    background-color: blueviolet;
+}
+.right{
+    flex-direction: row-reverse;
+    background-color: pink;
+}
