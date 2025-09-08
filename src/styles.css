@@ -92,7 +92,7 @@ button:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    animation: rotatePizza 15s linear infinite;
+    animation: rotatePizza 35s linear infinite;
 }
 @keyframes rotatePizza {
     from {
